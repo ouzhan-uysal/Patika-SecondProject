@@ -1,3 +1,4 @@
-import { writeToScreen } from "./animals";
+import { dog1 } from "./animals";
 
-writeToScreen();
+dog1.setAnimalName("murtaza");
+console.log(dog1.getAnimalInfo());

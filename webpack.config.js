@@ -1,3 +1,5 @@
+const path = require('path')
+
 module.exports = {
     /*
     Mode değişikliğinden sonra projeyi tekrar build etmem gerekir. (npm run build) Modu package.json içerisinde her bir kısayol içerisinde belirtebilirsin.
@@ -5,5 +7,14 @@ module.exports = {
 
     mode: "production"  --> .js dosyasının sıkıştırılmış halini bize sunar bu şekilde aynı işlevini yerine getirirken boyutu küçülmüş olur.
     */
-    mode: "development"
+    mode: "development",
+    entry: './src/index.js',
+    output: {
+        path: path.resolve(__dirname, 'build'),
+        filename: 'build.js'
+    },
+    devServer: {
+        port: 5005,
+        contentBase: path.join(__dirname, 'dist')
+    }
 }
