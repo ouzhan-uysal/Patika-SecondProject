@@ -1,0 +1,1 @@
+(()=>{"use strict";document.write("hellow world from webpack!")})();
