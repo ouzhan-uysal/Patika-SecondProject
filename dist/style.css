@@ -36,7 +36,7 @@ header, footer, article, div {
 @media all and (max-width: 575px) {
     body {
         grid-template-areas: "header" "article" "footer";
-        grid-template-rows: 10% 1fr 10%;
+        grid-template-rows: 10% 1fr 15%;
         grid-template-columns: 1fr;
     }
 }

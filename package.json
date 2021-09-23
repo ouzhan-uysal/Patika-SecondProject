@@ -4,8 +4,8 @@
     "description": "Ciceksepeti 2. Proje",
     "main": "index.js",
     "scripts": {
-        "build": "node_modules/.bin/webpack --mode production",
-        "babel": "node_modules/.bin/babel src/index.js -w -o dist/assets/main.js",
+        "build": "node_modules\\.bin\\webpack --mode production",
+        "babel": "node_modules\\.bin\\babel src/index.js -w -o dist/assets/main.js",
         "server": "webpack-dev-server --mode development"
     },
     "repository": {
