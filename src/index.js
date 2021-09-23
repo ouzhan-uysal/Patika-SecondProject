@@ -1,12 +1,12 @@
-import { instance_data } from "./animals";
+import { instanceData } from './animals';
 
 // instance_data[0].setAnimalName("at adam");
-console.log(instance_data[0].getAnimalInfo());
-console.log(instance_data);
+console.log(instanceData[0].getAnimalInfo());
+console.log(instanceData);
 
-let cardElem = "";
-instance_data.forEach(element => {
-    cardElem += `
+let cardElem = '';
+instanceData.forEach((element) => {
+  cardElem += `
     <div class="grid-item">
     <img src="${element.image}" alt="${element}">
     <p class="title">${element.name}</p>
@@ -14,7 +14,7 @@ instance_data.forEach(element => {
     <p class="description">Ayak Sayısı: ${element.numberOfLegs}</p>
     </div>
     `;
-    document.getElementById("contents").innerHTML = cardElem;
+  document.getElementById('contents').innerHTML = cardElem;
 });
 
 /*

@@ -1,52 +1,52 @@
 export class Animal {
-    constructor(name, image, numberOfLegs) {
-        this.name = name;
-        this.image = image;
-        this.numberOfLegs = numberOfLegs;
-    }
-    getAnimalInfo() {
-        return (`--- ${this.voice} ---\nname: ${this.name}\nNumber of Legs: ${this.numberOfLegs}\nAge: ${this.age}`)
-    }
-    setAnimalName(name) {
-        return this.name = name;
-    }
-    setAnimalImage(image) {
-        return this.image = image;
-    }
+  constructor(name, image, numberOfLegs) {
+    this.name = name;
+    this.image = image;
+    this.numberOfLegs = numberOfLegs;
+  }
+  getAnimalInfo() {
+    return (`--- ${this.voice} ---\nname: ${this.name}\nNumber of Legs: ${this.numberOfLegs}\nAge: ${this.age}`)
+  }
+  setAnimalName(name) {
+    return this.name = name;
+  }
+  setAnimalImage(image) {
+    return this.image = image;
+  }
 }
 
 class Dog extends Animal {
-    constructor(name, image, numberOfLegs, age, voice = "Hav Hav") {
-        super(name, image, numberOfLegs);
-        this.age = age;
-        this.voice = voice;
-        // console.log("Dog Class")
-    }
+  constructor(name, image, numberOfLegs, age, voice = 'Hav Hav') {
+    super(name, image, numberOfLegs);
+    this.age = age;
+    this.voice = voice;
+    // console.log("Dog Class")
+  }
 }
 
 class Duck extends Animal {
-    constructor(name, image, numberOfLegs, age, voice = "Vak Vak") {
-        super(name, image, numberOfLegs);
-        this.age = age;
-        this.voice = voice;
-        // console.log("Duck Class")
-    }
+  constructor(name, image, numberOfLegs, age, voice = 'Vak Vak') {
+    super(name, image, numberOfLegs);
+    this.age = age;
+    this.voice = voice;
+    // console.log("Duck Class")
+  }
 }
 
-export let instance_data = []
+export const instanceData = [];
 
-let dog1 = new Dog("Ralph Wolf", "https://via.placeholder.com/256x128.png?text=Ralph+Wolf", 4, 5);
-let dog2 = new Dog("Sam Sheepdog", "https://via.placeholder.com/256x128.png?text=Sam+Sheepdog", 4, 7);
-let duck1 = new Duck("Daffy Duck", "https://via.placeholder.com/256x128.png?text=Daffy+Duck", 2, 3);
-let duck2 = new Duck("Daisy Duck", "https://via.placeholder.com/256x128.png?text=Daisy+Duck", 2, 6);
+const dog1 = new Dog('Ralph Wolf', 'https://via.placeholder.com/256x128.png?text=Ralph+Wolf', 4, 5);
+const dog2 = new Dog('Sam Sheepdog', 'https://via.placeholder.com/256x128.png?text=Sam+Sheepdog', 4, 7);
+const duck1 = new Duck('Daffy Duck', 'https://via.placeholder.com/256x128.png?text=Daffy+Duck', 2, 3);
+const duck2 = new Duck('Daisy Duck', 'https://via.placeholder.com/256x128.png?text=Daisy+Duck', 2, 6);
 
-instance_data.push(dog1);
-instance_data.push(dog2);
-instance_data.push(duck1);
-instance_data.push(duck2);
+instanceData.push(dog1);
+instanceData.push(dog2);
+instanceData.push(duck1);
+instanceData.push(duck2);
 
-// dog1.setAnimalName("murtaza")
-// console.log(dog1.getAnimalInfo())
+// dog1.setAnimalName("murtaza");
+// console.log(dog1.getAnimalInfo());
 
 /*
 const animals = [
