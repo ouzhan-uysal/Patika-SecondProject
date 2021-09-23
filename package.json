@@ -6,7 +6,7 @@
     "scripts": {
         "build": "node_modules\\.bin\\webpack --mode production",
         "babel": "node_modules\\.bin\\babel src/index.js -w -o dist/assets/main.js",
-        "server": "webpack-dev-server --mode development"
+        "server": "node_modules\\.bin\\webpack-dev-server --mode development"
     },
     "repository": {
         "type": "git",

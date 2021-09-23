@@ -1,7 +1,7 @@
 import { instanceData } from './animals';
 
 // instance_data[0].setAnimalName("at adam");
-console.log(instanceData[0].getAnimalInfo());
+// console.log(instanceData[0].getAnimalInfo());
 console.log(instanceData);
 
 let cardElem = '';
