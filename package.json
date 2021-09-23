@@ -1,10 +1,11 @@
 {
     "name": "Patika-SecondProject",
     "version": "1.0.0",
-    "description": "",
+    "description": "Ciceksepeti 2. Proje",
     "main": "index.js",
     "scripts": {
         "build": "node_modules/.bin/webpack --mode production",
+        "babel": "node_modules/.bin/babel src/index.js -w -o dist/assets/main.js",
         "server": "webpack-dev-server --mode development"
     },
     "repository": {
@@ -19,6 +20,10 @@
     },
     "homepage": "https://github.com/ouzhan-uysal/Patika-SecondProject#readme",
     "devDependencies": {
+        "@babel/cli": "^7.15.7",
+        "@babel/core": "^7.15.5",
+        "@babel/preset-env": "^7.15.6",
+        "babel-loader": "^8.2.2",
         "webpack": "^5.53.0",
         "webpack-cli": "^4.8.0",
         "webpack-dev-server": "^4.2.1"

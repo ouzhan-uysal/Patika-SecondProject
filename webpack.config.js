@@ -15,8 +15,17 @@ module.exports = {
     },
     devServer: {
         port: 5005,
-        // contentBase: path.resolve(__dirname, 'dist'),
-        contentBase: path.join(__dirname, 'dist'),
+        // contentBase: path.join(__dirname, 'dist'),
+        contentBase: path.resolve(__dirname, 'dist'),
         publicPath: '/assets/'
+    },
+    module : {
+        rules: [{
+            test: /\.js$/,
+            exclude: /node_modules/,
+            use: {
+                loader: 'babel-loader',
+            }
+        }]
     }
 }
