@@ -1,40 +1,82 @@
 body {
     display: grid;
     grid-template-areas: "header header header" "article article article" "footer footer footer";
-    grid-template-rows: 80px 1fr 70px;
+    grid-template-rows: 10% 1fr 10%;
     grid-template-columns: 20% 1fr 15%;
-    grid-row-gap: 10px;
-    grid-column-gap: 10px;
+    grid-gap: 10px 10px;
     height: 100vh;
     margin: 0;
 }
 
 header, footer, article, div {
     padding: 1.2em;
-    background: gold;
 }
 
 #pageHeader {
     grid-area: header;
-    background-color: red;
+    background-color: #5f9ea0;
+    text-align: center;
+    font-size: xx-large;
 }
 
 #pageFooter {
     grid-area: footer;
-    background-color: blue;
+    background-color: #008080;
+    text-align: center;
+    font-size: xx-large;
 }
 
 #mainArticle {
     grid-area: article;
-    background-color: purple;
+    background-color: #2f4f4f;
 }
 
 /* Stack the layout on small devices/viewports. */
 
 @media all and (max-width: 575px) {
     body {
-        grid-template-areas: "header" "article" "article" "article" "footer";
-        grid-template-rows: 80px 1fr 70px 1fr 70px;
+        grid-template-areas: "header" "article" "footer";
+        grid-template-rows: 10% 1fr 10%;
         grid-template-columns: 1fr;
     }
+}
+
+/* ------------------------------------------------------- */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20em, 1fr));
+    grid-gap: 20px 20px;
+}
+
+.grid-container .grid-item {
+    display: grid;
+    position: relative;
+    border: 1px solid gold;
+    border-radius: 10px;
+    padding: 1em;
+    margin: 5px;
+    grid-template-columns: repeat(auto-fill, minmax(20em, 1fr));
+    justify-content: center;
+}
+
+.grid-container .grid-item img {
+    justify-self: center;
+    border-radius: 10px;
+}
+
+.grid-container .grid-item .title {
+    padding: 1em 1em;
+    color: gold;
+    text-align: center;
+    font-weight: bold;
+    overflow: hidden;
+    text-transform: uppercase;
+}
+
+.grid-container .grid-item .description {
+    color: gold;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }

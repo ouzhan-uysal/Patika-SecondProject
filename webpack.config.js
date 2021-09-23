@@ -7,14 +7,16 @@ module.exports = {
 
     mode: "production"  --> .js dosyasının sıkıştırılmış halini bize sunar bu şekilde aynı işlevini yerine getirirken boyutu küçülmüş olur.
     */
-    mode: "development",
+    // mode: "development",
     entry: './src/index.js',
     output: {
-        path: path.resolve(__dirname, 'build'),
-        filename: 'build.js'
+        path: path.resolve(__dirname, 'dist/assets'),
+        filename: 'main.js'
     },
     devServer: {
         port: 5005,
-        contentBase: path.join(__dirname, 'dist')
+        // contentBase: path.resolve(__dirname, 'dist'),
+        contentBase: path.join(__dirname, 'dist'),
+        publicPath: '/assets/'
     }
 }
