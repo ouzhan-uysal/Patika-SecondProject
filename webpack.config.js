@@ -13,10 +13,14 @@ module.exports = {
     filename: 'main.js',
   },
   devServer: {
-    port: 5005,
-    // contentBase: path.join(__dirname, 'dist'),
-    contentBase: path.resolve(__dirname, 'dist'),
-    publicPath: '/assets/',
+    static : {
+      directory : path.join(__dirname, "dist")
+    },
+    port: 3000,
+    devMiddleware:{
+       publicPath: "https://localhost:3000/dist/",
+    },
+    hot: "only",
   },
   module: {
     rules: [{
