@@ -11,16 +11,17 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist/assets'),
     filename: 'main.js',
+    publicPath: '/assets/'
   },
   devServer: {
-    static : {
-      directory : path.join(__dirname, "dist")
+    static: {
+      directory: path.resolve(__dirname, 'dist')
     },
     port: 3000,
-    devMiddleware:{
-       publicPath: "https://localhost:3000/dist/",
+    devMiddleware: {
+      publicPath: "https://localhost:3000/dist/",
     },
-    hot: "only",
+    // hot: "only",
   },
   module: {
     rules: [{

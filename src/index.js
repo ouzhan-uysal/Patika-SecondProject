@@ -7,11 +7,13 @@ console.log(instanceData);
 let cardElem = '';
 instanceData.forEach((element) => {
   cardElem += `
-    <div class="grid-item">
-    <img src="${element.image}" alt="${element}">
-    <p class="title">${element.name}</p>
-    <p class="description">Yaşı: ${element.age}</p>
-    <p class="description">Ayak Sayısı: ${element.numberOfLegs}</p>
+    <div class="card">
+      <img src="${element.image}" alt="${element}">
+      <div class="info">
+        <h1 class="title">${element.name}</h1>
+        <p class="description">Yaşı: ${element.age}</p>
+        <p class="description">Ayak Sayısı: ${element.numberOfLegs}</p>
+      </div>
     </div>
     `;
   document.getElementById('contents').innerHTML = cardElem;

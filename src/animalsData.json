@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Dog - 1",
+    "image_src": "https://t3.ftcdn.net/jpg/04/21/79/28/360_F_421792832_1Za7PX7xO2LiAU6tbKTCew1jQPCXMH0E.jpg",
+    "numberOfLegs": 4,
+    "age": 1
+  },
+  {
+    "name": "Dog - 2",
+    "image_src": "https://static.wixstatic.com/media/bce34a_3d5a97747c1147ec810e19855d58f7e0~mv2.png/v1/fill/w_280,h_360,al_c,q_85,usm_0.66_1.00_0.01/dark%20blue.webp",
+    "numberOfLegs": 4,
+    "age": 2
+  },
+  {
+    "name": "Dog - 3",
+    "image_src": "https://www.alcatrazeast.com/wp-content/uploads/2016/05/mcgruff-the-crime-dog.jpg",
+    "numberOfLegs": 4,
+    "age": 3
+  },
+  {
+    "name": "Dog - 4",
+    "image_src": "https://static.wixstatic.com/media/e00a6b_f48866f727ed41059fad94485dc9eb94~mv2.jpg/v1/fit/w_280,h_362,q_90/e00a6b_f48866f727ed41059fad94485dc9eb94~mv2.jpg",
+    "numberOfLegs": 4,
+    "age": 4
+  },
+  {
+    "name": "Dog - 5",
+    "image_src": "https://cdn.shopify.com/s/files/1/1395/8415/collections/d_grande.png?v=1493063823",
+    "numberOfLegs": 4,
+    "age": 5
+  },
+  {
+    "name": "Duck - 1",
+    "image_src": "https://t4.ftcdn.net/jpg/04/37/07/59/360_F_437075928_KslM943OCzDjWE0zeMNYj4mxGAuuZ4Aj.jpg",
+    "numberOfLegs": 2,
+    "age": 1
+  },
+  {
+    "name": "Duck - 2",
+    "image_src": "https://t4.ftcdn.net/jpg/00/68/72/49/360_F_68724918_VQXqdN0gRSJibARpOYqBJsPfQrzvRfIn.jpg",
+    "numberOfLegs": 2,
+    "age": 2
+  },
+  {
+    "name": "Duck - 3",
+    "image_src": "https://t3.ftcdn.net/jpg/03/47/93/38/360_F_347933856_sKeawBGBzSjqvLqGoMj00pP6MPHahrwP.jpg",
+    "numberOfLegs": 2,
+    "age": 3
+  },
+  {
+    "name": "Duck - 4",
+    "image_src": "https://t3.ftcdn.net/jpg/02/87/36/78/360_F_287367846_0SvTQFetvEjeXVISeyM9I6MaX3jm2WRs.jpg",
+    "numberOfLegs": 2,
+    "age": 4
+  },
+  {
+    "name": "Duck - 5",
+    "image_src": "https://d3rf6j5nx5r04a.cloudfront.net/8ZKplcGXNBeK9FOISG1zF6Vb0C0=/280x360/product/2/6/d480aa2260954e41b141b261d4ebe03f_opt.jpg",
+    "numberOfLegs": 2,
+    "age": 5
+  }
+]
