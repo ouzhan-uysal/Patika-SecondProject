@@ -10,12 +10,9 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 12,
   },
-  rules: { 
+  rules: {
     'linebreak-style': 0,
-    'max-classes-per-file': ['error', 3],
-    'max-len': ['error', {
-      '"ignoreComments"': true,
-      '"ignoreUrls"': true,
-    }],
+    'max-len': 0,
+    'max-classes-per-file': 0,
   },
 };

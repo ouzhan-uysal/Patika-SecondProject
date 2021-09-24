@@ -11,15 +11,15 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist/assets'),
     filename: 'main.js',
-    publicPath: '/assets/'
+    publicPath: '/assets/',
   },
   devServer: {
     static: {
-      directory: path.resolve(__dirname, 'dist')
+      directory: path.resolve(__dirname, 'dist'),
     },
     port: 3000,
     devMiddleware: {
-      publicPath: "https://localhost:3000/dist/",
+      publicPath: 'https://localhost:3000/dist/',
     },
     // hot: "only",
   },

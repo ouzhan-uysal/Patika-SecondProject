@@ -4,14 +4,17 @@ export class Animal {
     this.image = image;
     this.numberOfLegs = numberOfLegs;
   }
+
   getAnimalInfo() {
-    return (`--- ${this.voice} ---\nname: ${this.name}\nNumber of Legs: ${this.numberOfLegs}\nAge: ${this.age}`)
+    return (`--- ${this.voice} ---\nname: ${this.name}\nNumber of Legs: ${this.numberOfLegs}\nAge: ${this.age}`);
   }
+
   setAnimalName(name) {
-    return this.name = name;
+    return this.name === name;
   }
+
   setAnimalImage(image) {
-    return this.image = image;
+    return this.image === image;
   }
 }
 
@@ -19,7 +22,7 @@ class Dog extends Animal {
   constructor(name, image, numberOfLegs, age, voice = 'Hav Hav') {
     super(name, image, numberOfLegs);
     this.age = age;
-    let voice = voice;
+    this.voice = voice;
   }
 }
 
@@ -27,7 +30,7 @@ class Duck extends Animal {
   constructor(name, image, numberOfLegs, age, voice = 'Vak Vak') {
     super(name, image, numberOfLegs);
     this.age = age;
-    let voice = voice;
+    this.voice = voice;
   }
 }
 
